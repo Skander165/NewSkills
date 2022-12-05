@@ -295,8 +295,8 @@ function ResponsiveAppBar() {
                                 }}
                             >
                                 {guestPagesDropdown.map((page) => (
-                                    <Link href={page.link}>
-                                        <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                                    <Link href={page.link} key={page.text}>
+                                        <MenuItem onClick={handleCloseNavMenu}>
                                             <Typography textAlign="center">{page.text}</Typography>
                                         </MenuItem>
                                     </Link>
@@ -308,9 +308,9 @@ function ResponsiveAppBar() {
 
                         <Box sx={{ flexGrow: 1, justifyContent: "center", display: { xs: 'none', md: 'flex', gap: "30px" } }}>
                             {guestPages.map((page) => (
-                                <Link href={page.link}>
+                                <Link href={page.link} key={page.text}>
                                     <Button
-                                        key={page.text}
+
                                         onClick={handleCloseNavMenu}
                                         sx={{ color: 'secondary.main', fontSize: { lg: 14, md: 12 } }}
                                     >

@@ -4,7 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 import LinkedInProvider from "next-auth/providers/linkedin";
 import CredentialsProvider from "next-auth/providers/credentials"
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
-import clientPromise from "lib/mongodb"
+import clientPromise from "../../../lib/mongodb"
 
 export const authOptions = {
     // Configure one or more authentication providers
@@ -59,7 +59,16 @@ export const authOptions = {
     ],
     //Configure adapters
     adapter: MongoDBAdapter(clientPromise, {
-        databaseName: 'my-data-base-name'
+        databaseName: 'NewSkills'
     }),
+    secret: process.env.SECRET,
+    //pages
+    // pages: {
+    //     signIn: '/auth/signin',
+    //     signOut: '/auth/signout',
+    //     error: '/auth/error', // Error code passed in query string as ?error=
+    //     verifyRequest: '/auth/verify-request', // (used for check email message)
+    //     newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out if not of interest)
+    // }
 }
 export default NextAuth(authOptions)

@@ -2,21 +2,23 @@ import { Box, Button, Checkbox, Container, Divider, FormControlLabel, FormGroup,
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+import { useSession, signIn, signOut } from "next-auth/react"
 
 const Signup = () => {
+
+
     return (
         <Grid container direction="row" sx={{ height: "100vh" }}>
             <Grid sx={{ display: "flex", alignItems: "center", textAlign: "center" }} item xs={6}>
                 <Container maxWidth="xs"  >
                     <Typography gutterBottom variant="body1">Sign in to new skills</Typography>
                     <Box>
-                        <Button>Sign in with google</Button>
+                        <Button onClick={() => signIn()}>Sign in with google</Button>
                         <Button>Sign in with facebook</Button>
                     </Box>
                     <Divider sx={{ my: 3 }}>Or</Divider>
                     <FormGroup>
-                        <Grid container spacing={2} direction="column" justifyIntems="center">
+                        <Grid container spacing={2} direction="column" justifyItems="center">
                             <Grid item><TextField
                                 sx={{ width: "100%" }}
                                 required
