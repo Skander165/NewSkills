@@ -61,7 +61,7 @@ export const authOptions = {
     adapter: MongoDBAdapter(clientPromise, {
         databaseName: 'NewSkills'
     }),
-    secret: process.env.SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
     //pages
     // pages: {
     //     signIn: '/auth/signin',
