@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import { useRouter } from 'next/router';
 import Footer from './Footer';
 
+
 const Layout = ({ children }) => {
     const router = useRouter();
     return (

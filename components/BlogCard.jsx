@@ -37,7 +37,7 @@ const BlogCard = () => {
                 </Grid>
                 <Grid item sx={{ display: 'flex', alignItems: "center", justifyContent: 'space-between' }}>
                     <CardContent>
-                        <Typography variant="body1">6 hours ago <Typography color="secondary.main" component="body1">by Jon Doe</Typography></Typography>
+                        <Typography variant="body1">6 hours ago <Typography color="secondary.main" component="span">by Jon Doe</Typography></Typography>
                         <Typography color='primary.main' variant="body1" textTransform='capitalize'>économie</Typography>
                     </CardContent>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }} >

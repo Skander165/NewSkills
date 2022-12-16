@@ -14,13 +14,15 @@ import Main from '../components/Main';
 import AboutYouModal from '../components/AboutYouModal';
 import Interests from '../components/Interests';
 import WelcomeModal from '../components/WelcomeModal';
+import { useSession } from 'next-auth/react';
 
 export default function Index() {
-  const auth = false
+  const {data: session} = useSession();
+
   return (
 
     <>
-      {auth ? <>
+      {!session ? <>
         <Container>
           <HeaderOptions />
           <Main />
