@@ -1,6 +1,5 @@
 # NewSkills
 
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="New_Skills_0"></a>New Skills</h1>
 <h5 class="code-line" data-line-start=1 data-line-end=2 ><a id="A_Business_Network_project_1"></a>A Business Network project</h5>
 <h1 class="code-line" data-line-start=4 data-line-end=5 ><a id="_4"></a></h1>
 <h2 class="code-line" data-line-start=5 data-line-end=6 ><a id="Overview_5"></a>Overview</h2>
