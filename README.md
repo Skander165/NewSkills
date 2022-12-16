@@ -1,6 +1,6 @@
 # NewSkills
 
-<h5 class="code-line" data-line-start=1 data-line-end=2 ><a id="A_Business_Network_project_1"></a>A Business Network project</h5>
+<h1 class="code-line" data-line-start=1 data-line-end=2 ><a id="A_Business_Network_project_1"></a>A Business Network project</h1>
 <h1 class="code-line" data-line-start=4 data-line-end=5 ><a id="_4"></a></h1>
 <h2 class="code-line" data-line-start=5 data-line-end=6 ><a id="Overview_5"></a>Overview</h2>
 <p class="has-line-data" data-line-start="6" data-line-end="7">This project was developed by the company Vyemedia following the request of the client. Its main objective is to bring together individual investors to carry out joint investment projects. The financial education aspect is also one of the main objectives of this project, with analyses of national and global economic news as a guideline.</p>
